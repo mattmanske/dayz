@@ -1,11 +1,12 @@
-const React     = require('react');
-const moment    = require('moment');
-const Layout    = require('./data/layout');
-const Day       = require('./day');
-const XLabels   = require('./x-labels');
-const YLabels   = require('./y-labels');
+const React       = require('react');
+const Moment      = require('moment');
+const MomentRange = require('moment-range');
+const Layout      = require('./data/layout');
+const Day         = require('./day');
+const XLabels     = require('./x-labels');
+const YLabels     = require('./y-labels');
 
-require('moment-range'); // needed in order to for range to install itself
+const moment = MomentRange.extendMoment(Moment);
 
 const EventsCollection = require('./data/events-collection');
 
